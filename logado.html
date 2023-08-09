@@ -1,0 +1,147 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" media="screen and (max-width:800px)" href="./responsivo.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="./img/fundo.png"> -->
+
+  <title>SERVIÇOS</title>
+</head>
+
+<body>
+
+  <header id="heade">
+    <!--container-->
+    <div class="container">
+    
+      <nav >
+      
+        <ul class="ul">
+          <a class="smooth-scroll" id="openTodo" onclick="closeNav()">LISTA DE TAREFAS</a>
+          <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
+          <a class="smooth-scroll" id="openObras" onclick="closeNav() ">CADASTRO DE OBRAS</a>
+          <a class="smooth-scroll" id="openRDO" onclick="closeNav() ">R.D.O</a>         
+          <a class="smooth-scroll" href="https://centraldofuncionario.com.br/69410" onclick="closeNav() ">ponto web</a>         
+          <a class="smooth-scroll" href="https://drive.google.com/file/d/1CkhwjMcOQ1Zna9hSzibofOxCI-I4-B8a/view" onclick="closeNav() ">suporte</a>         
+        </ul>
+        <span class="open-btn" onclick="openNav()">&#9776;</span>
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+      </nav>
+
+      <section class="banner">
+
+          <div class="to-do">
+   
+            <div class="header">
+            
+           
+              <p>To-Do List</p>
+             
+              <button><i class='bx bxs-trash-alt' ></i></button>
+             
+            </div>
+            
+            <br />
+            <div class="divInsert">
+              <input id="todolist" class="textInsert" type="text" />
+              <button><i class='bx bx-plus'></i></button>
+            </div>
+            <div class="novatarefa"></div>
+          </div>
+      </section>
+
+    </div>
+  </header>
+  <main>
+
+    
+    <div class="ObAndamento">
+      <h1>Andamento de Obras</h1>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiF9JPckAbBoo84kH8sla-ezTAPLGJhNm2USP2NNDZzCYpONnOkkmWMXnaiE5q-Qnf0fuQFyTgVD4w/pubhtml?gid=1850414703&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+    <!-- <div id="circulo" class="graficoCirculo">
+      <h1>Andamento de Obras</h1>
+      <input id="number" type="number">
+      <br>
+      <button id="btnGrafico" onclick="go()">Enviar</button>
+      <h2>Lapa</h2>
+      <div class="box">
+        <div class="box-circle">
+          <svg >
+            <circle r="70" cx="70" cy="70"></circle>
+            <circle id="circleProgress" r="70" cx="70" cy="70"></circle>
+          </svg>
+        </div>
+          <div class="number"></div>
+      </div>
+    </div> -->
+  
+  </div>
+  <div class="formularios">
+    <div class="rdo">
+      <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUMjFEVDJKVTFaT1E0UFY4TEE5NkxJNkNUMC4u&embed=true"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    </div>
+    <div class="obras">
+      <iframe  src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUQllFWVoxMk5YWE1TNEtRN0lQQldKR0k0Qy4u&embed=true" mallowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    </div>
+   
+  </div>
+
+  </main>
+
+ 
+
+   <div class="gallery">
+
+     <span>
+      <p>Administrativo</p>
+      <a class="galeria" href="https://drive.google.com/drive/folders/11OKPLuKOMUmCePtT-KwuSqEvIwC_J7oF?usp=sharing">
+        <img class="galeria"
+          src="https://th.bing.com/th/id/R.ed1e281736185b4ba4f37f07035b8722?rik=2yXl6x7XPAOMRQ&riu=http%3a%2f%2funicatolicaquixada.edu.br%2fwp-content%2fuploads%2f2016%2f05%2fadministra%c3%a7%c3%a3o-2.png&ehk=VeVCYQvpVKeK59Ihu1mvPcGoUwej5yvGpQID11yv4Kw%3d&risl=&pid=ImgRaw&r=0">
+
+      </a>
+
+
+    </span> 
+    <span>
+      <p>Planilha Orçamentaria</p>
+      <a
+        href="https://docs.google.com/spreadsheets/d/1NsR6FXhztTiaAQaoUs6DJbge_bQob-0v/edit?usp=sharing&ouid=105002554421342113603&rtpof=true&sd=true">
+        <img src="https://th.bing.com/th/id/OIP.rj8GDb2t1zCR-SPQ3eGuWgHaF7?pid=ImgDet&rs=1">
+
+      </a>
+
+    </span>
+
+    <span>
+      <p>Gmail</p>
+      <a
+        href="https://accounts.google.com/v3/signin/identifier?dsh=S-133424918%3A1688149060464159&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fhl%3Dpt-BR&emr=1&hl=pt-BR&ifkv=AeDOFXgBi-WOsNnCmiGY8d-6Q2J8C6XCtl69gy2CyADdJb89H3SveglHDaKK0wUAPC7GG8AQovAGDg&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=">
+        <img src="./gmail.jpg">
+
+      </a>
+
+    </span> 
+  </div>
+
+
+  <footer>
+    <p>WR Locações e Serviços</p>
+
+  </footer>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
