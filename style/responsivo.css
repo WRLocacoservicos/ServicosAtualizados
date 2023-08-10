@@ -204,7 +204,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e0fa3;
+  background-image: linear-gradient( rgba(0, 217, 255, 0.8), rgba(7, 6, 10, 0.8));
   color: #fff;
   position: fixed;
   top: 0;
