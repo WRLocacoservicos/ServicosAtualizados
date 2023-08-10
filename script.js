@@ -17,7 +17,7 @@ function logar() {
 
   const users =
   {
-    name: 'ismaile',
+    name: 'Admin',
     password: '1234',
     name2: 'Ruy',
     password2: '4321',

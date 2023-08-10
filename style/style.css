@@ -11,6 +11,15 @@
 
 }
 
+.imagenNav {
+  display:flex;
+  margin-left: -300px;
+  margin-top: 10px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+
+}
 
 /*todo*/
 
