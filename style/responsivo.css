@@ -385,3 +385,79 @@ li {
     transform:translate(-50%,-50%);
 
   }
+  .rdo form {
+    border-radius: 0;
+  }
+
+  
+/*  */
+.containerFormRDO  {
+  height: 100%;
+  color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+}
+.containerFormRDO  label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.cabecalho {
+  /* align-items: center; */
+  margin-top: 65vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.cabecalho h2 {
+  text-align: center;
+}
+.funcionarios input{
+  width: 150px;
+  text-align: center;
+
+}
+
+.funcionarios p {
+  width: 100%;
+  display: flex;
+}
+.funcionarios{
+  margin-left: 5%;
+  gap: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin-bottom: 15px;
+
+}
+.assinaturas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+  .assinaturas input {
+    text-align: center;
+  }
+
+  .botao{
+    display: flex;
+    margin: auto;
+    gap: 10px;
+  
+  }
+  .botao button{
+    font-weight: bold;
+    color: #ffff;
+  margin-bottom: 20px;
+  background-color: #09acdd;
+  width: 70px;
+  padding: 10px;
+  border-radius: 8px;
+
+}

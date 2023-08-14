@@ -4,10 +4,19 @@ let res = document.getElementById('res');
 let rdo = document.querySelector('.rdo');
 let obras = document.querySelector('.obras');
 let ObAndamento = document.querySelector('.ObAndamento');
-// let usuario = document.getElementById('user').value;
+let btnRDOs = document.querySelector('#btnRDO');
 
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var data = new FormData(event.target);
+  fetch('https://sheetdb.io/api/v1/xe8dsai9xxogg', {
+      method: 'POST',
+      body: data
+  }).then(function(response) {
 
-// res.innerHTML=`${usuario}`
+      alert('FORMULÁRIO ENVIADO COM SUCESSO!');
+  });
+});
 
 function logar() {
 

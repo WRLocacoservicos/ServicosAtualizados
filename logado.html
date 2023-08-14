@@ -1,5 +1,4 @@
-
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/wr.png">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" media="screen and (max-width:800px)" href="./style/responsivo.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -24,8 +24,8 @@
   <header id="heade">
     <!--container-->
     <div class="container">
-    
-      <nav >
+
+      <nav>
         <div class="imagenNav">
           <img src="./img/fundo.png">
         </div>
@@ -33,12 +33,15 @@
           <a class="smooth-scroll" id="openTodo" onclick="closeNav()">LISTA DE TAREFAS</a>
           <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
           <a class="smooth-scroll" id="openObras" onclick="closeNav() ">CADASTRO DE OBRAS</a>
-          <a class="smooth-scroll" id="openRDO" onclick="closeNav() ">R.D.O</a>         
-          <a class="smooth-scroll" href="https://centraldofuncionario.com.br/69410" onclick="closeNav() ">ponto web</a>         
-          <a class="smooth-scroll" href="https://drive.google.com/file/d/1CkhwjMcOQ1Zna9hSzibofOxCI-I4-B8a/view" onclick="closeNav() ">suporte</a>         
-          <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=554198915343" onclick="closeNav() ">engenharia</a>         
-          <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=5541413810186" onclick="closeNav() ">administrativo</a>         
-          <a class="smooth-scroll" href="./index.html" onclick="closeNav() ">sair</a>         
+          <a class="smooth-scroll" id="openRDO" onclick="closeNav() ">R.D.O</a>
+          <a class="smooth-scroll" href="https://centraldofuncionario.com.br/69410" onclick="closeNav() ">ponto web</a>
+          <a class="smooth-scroll" href="https://drive.google.com/file/d/1CkhwjMcOQ1Zna9hSzibofOxCI-I4-B8a/view"
+            onclick="closeNav() ">suporte</a>
+          <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=554198915343"
+            onclick="closeNav() ">engenharia</a>
+          <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=5541413810186"
+            onclick="closeNav() ">administrativo</a>
+          <a class="smooth-scroll" href="./index.html" onclick="closeNav() ">sair</a>
         </ul>
         <span class="open-btn" onclick="openNav()">&#9776;</span>
         <span class="close-btn" onclick="closeNav()">&times;</span>
@@ -46,36 +49,40 @@
 
       <section class="banner">
 
-          <div class="to-do">
-   
-            <div class="header">
-            
-           
-              <p>To-Do List</p>
-             
-              <button><i class='bx bxs-trash-alt' ></i></button>
-             
-            </div>
-            
-            <br />
-            <div class="divInsert">
-              <input id="todolist" class="textInsert" type="text" />
-              <button><i class='bx bx-plus'></i></button>
-            </div>
-            <div class="novatarefa"></div>
+        <div class="to-do">
+
+          <div class="header">
+
+
+            <p>To-Do List</p>
+
+            <button><i class='bx bxs-trash-alt'></i></button>
+
           </div>
+
+          <br />
+          <div class="divInsert">
+            <input id="todolist" class="textInsert" type="text" />
+            <button><i class='bx bx-plus'></i></button>
+          </div>
+          <div class="novatarefa"></div>
+        </div>
       </section>
 
     </div>
   </header>
   <main>
 
-    
+
     <div class="ObAndamento">
       <h1>Andamento de Obras</h1>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiF9JPckAbBoo84kH8sla-ezTAPLGJhNm2USP2NNDZzCYpONnOkkmWMXnaiE5q-Qnf0fuQFyTgVD4w/pubhtml?gid=880513405&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiF9JPckAbBoo84kH8sla-ezTAPLGJhNm2USP2NNDZzCYpONnOkkmWMXnaiE5q-Qnf0fuQFyTgVD4w/pubhtml?gid=880513405&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      <h1>Relatórios diário de Obras</h1>
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRv9sSsNopIrpROrhgwHa1LlvNT6EXkxtTI6oeBjS8BRJSUsgB3qfJQlv2VmXS-tLOkoxhZG8847FVl/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
     </div>
-    <!-- <div id="circulo" class="graficoCirculo">
+      <!-- <div id="circulo" class="graficoCirculo">
       <h1>Andamento de Obras</h1>
       <input id="number" type="number">
       <br>
@@ -90,26 +97,87 @@
         </div>
           <div class="number"></div>
       </div>
-    </div> -->
-  
-  </div>
-  <div class="formularios">
+    </div>
+
+    </div>-->
     <div class="rdo">
-      <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUMjFEVDJKVTFaT1E0UFY4TEE5NkxJNkNUMC4u&embed=true"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+      <form>
+
+        <div class="containerFormRDO">
+
+          <div class="cabecalho">
+            <h2>Relatórios diário de Obras</h2>
+            <label for="dia">Data</label>
+            <input type="date" id="dia"  name="data[Dia]">
+            <label >Descrição do Trabalho</label>
+            <textarea name=" data[Descrição do Trabalho]" id="" cols="10" rows="10"></textarea>
+            <label >Local da Obra</label>
+            <input type="text" id="Local" placeholder="Local da Obra" name="data[Local da Obra]">
+            <label for="inicio">Inicio do trabalho</label>
+            <input type="time" id="inicio" placeholder="Inicio do trabalho" name="data[Inicio do trabalho]">
+            <label for="fim">Fim do trabalho</label>
+            <input type="time" id="fim" placeholder="Fim do trabalho" name="data[Fim do trabalho]">
+            <label for="Paralizacao">Paralizacao</label>
+            <textarea type="text" id="Paralizacao" name="data[Paralisação início e fim]" cols="10"
+            rows="10">Paralisação início e fim:</textarea>
+          <label for="Insumos">Insumos</label>
+          <textarea id="Insumos" name="data[Quantidade de Insumos]" cols="10" rows="10"></textarea>
+          </div>
+            <div class="funcionarios">
+              
+              <div class="um">
+                <label for="Encarregado">Encarregado</label>
+                <input type="number" id="Encarregado" name="data[Encarregado]">
+                <label for="Líder">Líder</label>
+                <input type="number" id="Líder" name="data[Líder]">
+                <label for="Pintor">Pintor</label>
+                <input type="number" id="Pintor" name="data[Pintor]">
+                <label for="Pintor">Ajudante</label>
+                <input type="number" id="ajudante" name="data[Ajudante]">
+              </div>
+             <div class="dois">
+              
+              <label for="Soldador">Soldador</label>
+              <input type="number" id="Soldador" name="data[Soldador]">
+              <label for="Mecânico/Montador">Mecânico/Montador</label>
+              <input type="number" id="Mecânico/Montador" name="data[Mecânico/Montador]">
+              <label for="Caldeireiro">Caldeireiro</label>
+              <input type="number" id="Caldeireiro" name="data[Caldeireiro]">
+             </div>
+      
+            </div>
+            <div class="assinaturas">
+              <p>Responsável</p>
+              <br>
+              <input type="text" id="Responsável" name="data[Nome Do Responsável]">
+            </div>
+            <div class="botao">
+              <button type="submit" id="btnRDO" >Enviar</button>
+          
+              <button type="reset" >Limpar</button>
+            </div>
+           
+            
+        </div>
+         
+      </form>
+
+      <!-- <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUMjFEVDJKVTFaT1E0UFY4TEE5NkxJNkNUMC4u&embed=true"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
     </div>
     <div class="obras">
-      <iframe  src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUQllFWVoxMk5YWE1TNEtRN0lQQldKR0k0Qy4u&embed=true" mallowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+      <iframe
+        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUQllFWVoxMk5YWE1TNEtRN0lQQldKR0k0Qy4u&embed=true"
+        mallowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
     </div>
-   
-  </div>
 
   </main>
 
- 
 
-   <div class="gallery">
 
-     <span>
+  <div class="gallery">
+
+    <span>
       <p>Administrativo</p>
       <a class="galeria" href="https://drive.google.com/drive/folders/11OKPLuKOMUmCePtT-KwuSqEvIwC_J7oF?usp=sharing">
         <img class="galeria"
@@ -118,7 +186,7 @@
       </a>
 
 
-    </span> 
+    </span>
     <span>
       <p>Planilha Orçamentaria</p>
       <a
@@ -137,7 +205,7 @@
 
       </a>
 
-    </span> 
+    </span>
   </div>
 
 
