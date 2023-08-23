@@ -59,6 +59,11 @@ p {
   margin-top: 40px;
   width: 60%;
 }
+.todo {
+  display: block;
+  margin-top: 40px;
+  width: 60%;
+}
 
 .textInsert {
   border: none;
@@ -132,7 +137,74 @@ li {
   text-decoration: line-through;
 }
 
+.cabecalho {
+  /* align-items: center; */
+  /* margin-top: 95vh; */
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 
+.cabecalho h2 {
+  text-align: center;
+}
+.funcionarios input{
+  display: flex;
+  width: 150px;
+  text-align: center;
+
+}
+
+.funcionarios p {
+  width: 100%;
+  display: flex;
+}
+.funcionarios{
+  margin-left: 5%;
+  gap: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin-bottom: 15px;
+
+}
+.assinaturas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+  .assinaturas input {
+    text-align: center;
+  }
+
+  .botao{
+  display: flex;
+  justify-content: center;
+    gap: 10px;
+    align-items: center;
+  
+  }
+  .botao button{
+    font-weight: bold;
+    color: #ffff;
+  margin-bottom: 20px;
+  background-color: #09acdd;
+  width: 70px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+label{
+  font-weight: bold;
+}
+
+.botao button:hover{
+  background-color: #8b979b;
+}
  form {
   background-image: linear-gradient( rgba(0, 217, 255, 0.8), rgba(29, 5, 134, 0.8));
   border-radius: 20px;
@@ -143,15 +215,12 @@ li {
   box-shadow: 0 10px 15px #030202ef;
 }
 
-.containerForm{
+
+.rdo form{
   display: flex;
-  flex-direction: column;
-  padding: 70px 80px;
-
+  height: 100%;
+  position: absolute;
 }
-
-
-
 .containerForm input{
   border: none;
   padding: 5px;
@@ -219,7 +288,7 @@ nav ul a {
   margin: 0;
   padding: 15px;
   text-transform: uppercase;
-
+  cursor: pointer;
   transition: 0.3s;
 
 }
@@ -458,11 +527,18 @@ main{
 }
 .ObAndamento {
   /* overflow-y: hidden; */
-  width: 100%;
+  width: 82%;
   height: 100%;
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+ 
+
   background-image: linear-gradient( rgba(0, 217, 255, 0.8), rgba(29, 5, 134, 0.8));
 }
-
+.ObAndamento h1{
+  height: 70px;
+}
 .ObAndamento iframe {
   width: 100%;
   height: 50%;
@@ -478,6 +554,7 @@ main .formulario{
 border: none;
 display: none;
 margin: auto;
+
 }
  .rdo iframe {
   width: 550px;

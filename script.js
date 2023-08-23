@@ -227,15 +227,3 @@ function closeNav() {
   closeBtn.style.display = 'none'
   openBtn.style.display = 'block'
 }
-
-
-
-
-
-
-
-
-
-
-
-
