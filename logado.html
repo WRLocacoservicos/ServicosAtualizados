@@ -30,10 +30,10 @@
           <img src="./img/fundo.png">
         </div>
         <ul class="ul">
+          <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
           <a class="smooth-scroll" id="openTodo" onclick="closeNav()">LISTA DE TAREFAS</a>
           <a href="https://to-do-delta-umber.vercel.app/" class="smooth-scroll"  onclick="closeNav()">Tarefas programadas</a>
           <a href="https://upload-deimagens.vercel.app/" class="smooth-scroll"  onclick="closeNav()">enviar imagens</a>
-          <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
           <a class="smooth-scroll" id="openObras" onclick="closeNav() ">CADASTRO DE OBRAS</a>
           <a class="smooth-scroll" id="openRDO" onclick="closeNav() ">R.D.O</a>
           <a class="smooth-scroll" href="https://centraldofuncionario.com.br/69410" onclick="closeNav() ">ponto web</a>
@@ -77,10 +77,8 @@
 
 
     <div class="ObAndamento">
-      <h1>Andamento de Obras</h1>
-      <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiF9JPckAbBoo84kH8sla-ezTAPLGJhNm2USP2NNDZzCYpONnOkkmWMXnaiE5q-Qnf0fuQFyTgVD4w/pubhtml?gid=880513405&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
       <h1>Relatórios diário de Obras</h1>
+    
       <iframe
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRv9sSsNopIrpROrhgwHa1LlvNT6EXkxtTI6oeBjS8BRJSUsgB3qfJQlv2VmXS-tLOkoxhZG8847FVl/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
     </div>
@@ -93,11 +91,11 @@
           <div class="cabecalho">
             <h2>Relatórios diário de Obras</h2>
             <label for="dia">Data</label>
-            <input type="date" id="dia"  name="data[Dia]">
+            <input type="date" id="dia" required name="data[Dia]">
             <label >Descrição do Trabalho</label>
-            <textarea name=" data[Descrição do Trabalho]" id="" cols="10" rows="10"></textarea>
+            <textarea name=" data[Descrição do Trabalho]" required id="" cols="10" rows="10"></textarea>
             <label >Local da Obra</label>
-            <input type="text" id="Local" placeholder="Local da Obra" name="data[Local da Obra]">
+            <input type="text" id="Local" required placeholder="Local da Obra" name="data[Local da Obra]">
             <label for="inicio">Inicio do trabalho</label>
             <input type="time" id="inicio" placeholder="Inicio do trabalho" name="data[Inicio do trabalho]">
             <label for="fim">Fim do trabalho</label>
@@ -106,7 +104,7 @@
             <textarea type="text" id="Paralizacao" name="data[Paralisação início e fim]" cols="10"
             rows="10">Paralisação início e fim:</textarea>
             <label for="Insumos">Insumos</label>
-            <textarea id="Insumos" name="data[Quantidade de Insumos]" cols="10" rows="10"></textarea>
+            <textarea id="Insumos" required name="data[Quantidade de Insumos]" cols="10" rows="10"></textarea>
           </div>
           <p>Quantidade de funcionários</p>
             <div class="funcionarios">
@@ -135,12 +133,12 @@
             <div class="assinaturas">
               <p>Responsável</p>
               <br>
-              <input type="text" id="Responsável" name="data[Nome Do Responsável]">
+              <input type="text" id="Responsável" required ="data[Nome Do Responsável]">
             </div>
             <div class="botao">
               <button type="submit" id="btnRDO" >Enviar</button>
           
-              <button type="reset" >Limpar</button>
+              <button type="reset"  >Limpar</button>
             </div>
            
             

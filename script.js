@@ -164,6 +164,15 @@ openTodo.addEventListener('click', () => {
 
 })
 
+var form = document.querySelector('form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    var inputs = form.querySelectorAll('input');
+    var txtA = form.querySelectorAll('textarea');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].value = '';
+    }
+});
 
 
 openRDO.addEventListener('click', () => {
