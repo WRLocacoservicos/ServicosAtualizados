@@ -13,41 +13,22 @@ document.querySelector('form').addEventListener('submit', function(event) {
       method: 'POST',
       body: data
   }).then(function(response) {
-
-      alert('FORMULÁRIO ENVIADO COM SUCESSO!');
+    alerta()
+   
   });
 });
 
-function logar() {
-
-
-  let User = document.getElementById('user').value
-  let password = document.getElementById('password').value;
-
-  const users =
-  {
-    name: 'Admin',
-    password: '1234',
-    name2: 'Ruy',
-    password2: '4321',
-    name3: 'Alan',
-    password3: '1243'
-  }
-
-
-  if (User === users.name && password === users.password) {
-    location.href = './logado.html'
-  } else if (User === users.name2 && password === users.password2) {
-    location.href = './logado.html'
-  } else if (User === users.name3 && password === users.password3) {
-    location.href = './logado.html'
-  } else {
-    alert('SENHA INCORRETA')
-  }
-
-
-
+function alerta() {
+  Swal.fire({
+    // position: 'top-end',
+    icon: 'success',
+    title: 'Salvo com sucesso',
+    showConfirmButton: false,
+    timer: 1500
+  })
 }
+
+
 
 
 //todo
@@ -195,29 +176,6 @@ openObras.addEventListener('click', () => {
 
 loadItens()
 
-
-
-//grafico
-//  function go(){
-//   let graficoCirculo = document.getElementById('graficoCirculo')
-//   let circle = document.getElementById('circleProgress')
-//   let number = document.getElementById('number').value
-//   document.querySelector('.number').innerHTML = number + '%'
-
-//   circle.style.strokeDashoffset =440 -  (440 * number / 100);
-//   localStorage.setItem('progressValue', number); 
-//  }
-
-//  function loadFromLocalStorage() {
-//   let savedValue = localStorage.getItem('progressValue');
-//   if (savedValue !== null) {
-//     document.getElementById('number').value = savedValue;
-//     go(); // Chamando a função go() para atualizar o gráfico
-//   }
-// }
-
-// // Chame essa função quando a página carregar
-// window.onload = loadFromLocalStorage;
 
 
 //menu celular
