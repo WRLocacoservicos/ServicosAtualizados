@@ -12,6 +12,16 @@
 
 }
 
+.enviar{
+  /* position: absolute; */
+  background-color: #3387e7;
+  padding: 10px 15px;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0 , 1, .9);
+  color: white;
+  margin-top: 15px;
+}
+
 .imagenNav {
   display:flex;
   margin-left: -300px;
@@ -181,6 +191,7 @@ li {
   align-items: center;
   padding: 10px;
   text-align: center;
+  
 }
 
   .assinaturas input {
