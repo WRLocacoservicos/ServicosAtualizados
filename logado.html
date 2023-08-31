@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
+
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./img/wr.png">
+  <link rel="icon" href="./img/wr.png">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" media="screen and (max-width:800px)" href="./style/responsivo.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -31,9 +31,10 @@
         </div>
         <ul class="ul">
           <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
+          <a class="smooth-scroll" id="openRDO" onclick="closeNav() " style="color: black;"><strong>Relatório diario de obras</strong></a>
           <a class="smooth-scroll" id="openTodo" onclick="closeNav()">LISTA DE TAREFAS</a>
-          <a href="https://to-do-delta-umber.vercel.app/" class="smooth-scroll"  onclick="closeNav()">Tarefas programadas</a>
-          <a class="smooth-scroll" id="openRDO" onclick="closeNav() ">Relatório diario de obras</a>
+          <a href="https://to-do-delta-umber.vercel.app/" class="smooth-scroll" onclick="closeNav()">Tarefas
+            programadas</a>
           <a class="smooth-scroll" id="openObras" onclick="closeNav() ">CADASTRO DE OBRAS</a>
           <a class="smooth-scroll" href="https://centraldofuncionario.com.br/69410" onclick="closeNav() ">ponto web</a>
           <a class="smooth-scroll" href="https://drive.google.com/file/d/1CkhwjMcOQ1Zna9hSzibofOxCI-I4-B8a/view"
@@ -77,7 +78,7 @@
 
     <div class="ObAndamento">
       <h1>Relatórios diário de Obras</h1>
-    
+
       <iframe
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRv9sSsNopIrpROrhgwHa1LlvNT6EXkxtTI6oeBjS8BRJSUsgB3qfJQlv2VmXS-tLOkoxhZG8847FVl/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
     </div>
@@ -91,9 +92,9 @@
             <h2>Relatórios diário de Obras</h2>
             <label for="dia">Data</label>
             <input type="date" id="dia" required name="data[Dia]">
-            <label >Descrição do Trabalho</label>
+            <label>Descrição do Trabalho</label>
             <textarea name=" data[Descrição do Trabalho]" required id="" cols="10" rows="10"></textarea>
-            <label >Local da Obra</label>
+            <label>Local da Obra</label>
             <input type="text" id="Local" required placeholder="Local da Obra" name="data[Local da Obra]">
             <label for="inicio">Inicio do trabalho</label>
             <input type="time" id="inicio" placeholder="Inicio do trabalho" name="data[Inicio do trabalho]">
@@ -101,25 +102,25 @@
             <input type="time" id="fim" placeholder="Fim do trabalho" name="data[Fim do trabalho]">
             <label for="Paralizacao">Paralizacao</label>
             <textarea type="text" id="Paralizacao" name="data[Paralisação início e fim]" cols="10"
-            rows="10">Paralisação início e fim:</textarea>
+              rows="10">Paralisação início e fim:</textarea>
             <label for="Insumos">Insumos</label>
             <textarea id="Insumos" required name="data[Quantidade de Insumos]" cols="10" rows="10"></textarea>
           </div>
-          <p>Quantidade de funcionários</p>
-            <div class="funcionarios">
-              
-              <div class="um">
-                <label for="Encarregado">Encarregado</label>
-                <input type="number" id="Encarregado" name="data[Encarregado]">
-                <label for="Líder">Líder</label>
-                <input type="number" id="Líder" name="data[Líder]">
-                <label for="Pintor">Pintor</label>
-                <input type="number" id="Pintor" name="data[Pintor]">
-                <label for="Pintor">Ajudante</label>
-                <input type="number" id="ajudante" name="data[Ajudante]">
-              </div>
-             <div class="dois">
-              
+          <h2>Quantidade de funcionários</h2>
+          <div class="funcionarios">
+
+            <div class="um">
+              <label for="Encarregado">Encarregado</label>
+              <input type="number" id="Encarregado" name="data[Encarregado]">
+              <label for="Líder">Líder</label>
+              <input type="number" id="Líder" name="data[Líder]">
+              <label for="Pintor">Pintor</label>
+              <input type="number" id="Pintor" name="data[Pintor]">
+              <label for="Pintor">Ajudante</label>
+              <input type="number" id="ajudante" name="data[Ajudante]">
+            </div>
+            <div class="dois">
+
               <label for="Soldador">Soldador</label>
               <input type="number" id="Soldador" name="data[Soldador]">
               <label for="Mecânico/Montador">Mecânico/Montador</label>
@@ -128,80 +129,66 @@
               <input type="number" id="Caldeireiro" name="data[Caldeireiro]">
               <label for="Munk">Munk</label>
               <input type="number" id="Munk" name="data[Munk]">
-             </div>
-      
             </div>
-            <div class="assinaturas">
-              <p>Responsável</p>
-              <br>
-              <input type="text" id="Responsável" required name="data[Nome Do Responsável]">
-              <br>
-              <a href="https://upload-deimagens.vercel.app/" class="enviar" >Enviar imagens</a>
-              <br>
+          </div>
+            <div class="containerFile">
+              <h2>Enviar imagens da Obra</h2>
+              <ul>
+                <li>
+                  <input type="checkbox" name="Ceará" id="Ceara">
+                  <label for="Ceara">Ceará</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="Para" id="Para">
+                  <label for="Para">Para</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="Balsa Nova" id="Balsa">
+                  <label for="Balsa">Balsa Nova</label>
+                </li>
+
+              </ul>
+              <div class="files">
+                <input type="file" name="arquivo" multiple>
+                <div id="percent"></div>
+              <progress value="0" max="100" class="regress"></progress>
+
+              <button class="enviar" type="button" id="uploadImage">Enviar Imagem</button>
+              </div>
+              
+              <div class="assinaturas">
+                <p>Responsável</p>
+                <br>
+                <input type="text" id="Responsável" required name="data[Nome Do Responsável]">
+  
+              </div>
+              <div class="botao">
+                <button type="submit" id="btnRDO">Enviar</button>
+  
+                <button type="reset">Limpar</button>
+  
+              </div>
             </div>
-            <div class="botao">
-              <button type="submit" id="btnRDO" >Enviar</button>
+    
           
-              <button type="reset" >Limpar</button>
-            </div>
-           
-            
-        </div>
-       
+
       </form>
+
+
 
       <!-- <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUMjFEVDJKVTFaT1E0UFY4TEE5NkxJNkNUMC4u&embed=true"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
     </div>
     <div class="obras">
       <iframe
-        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUQllFWVoxMk5YWE1TNEtRN0lQQldKR0k0Qy4u&embed=true"> </iframe>
+        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUQllFWVoxMk5YWE1TNEtRN0lQQldKR0k0Qy4u&embed=true">
+      </iframe>
     </div>
 
   </main>
 
 
-
-  <div class="gallery">
-
-    <span>
-      <p>Administrativo</p>
-      <a class="galeria" href="https://drive.google.com/drive/folders/11OKPLuKOMUmCePtT-KwuSqEvIwC_J7oF?usp=sharing">
-        <img class="galeria"
-          src="https://th.bing.com/th/id/R.ed1e281736185b4ba4f37f07035b8722?rik=2yXl6x7XPAOMRQ&riu=http%3a%2f%2funicatolicaquixada.edu.br%2fwp-content%2fuploads%2f2016%2f05%2fadministra%c3%a7%c3%a3o-2.png&ehk=VeVCYQvpVKeK59Ihu1mvPcGoUwej5yvGpQID11yv4Kw%3d&risl=&pid=ImgRaw&r=0">
-
-      </a>
-
-
-    </span>
-    <span>
-      <p>Planilha Orçamentaria</p>
-      <a
-        href="https://docs.google.com/spreadsheets/d/1NsR6FXhztTiaAQaoUs6DJbge_bQob-0v/edit?usp=sharing&ouid=105002554421342113603&rtpof=true&sd=true">
-        <img src="https://th.bing.com/th/id/OIP.rj8GDb2t1zCR-SPQ3eGuWgHaF7?pid=ImgDet&rs=1">
-
-      </a>
-
-    </span>
-
-    <span>
-      <p>Gmail</p>
-      <a
-        href="https://accounts.google.com/v3/signin/identifier?dsh=S-133424918%3A1688149060464159&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fhl%3Dpt-BR&emr=1&hl=pt-BR&ifkv=AeDOFXgBi-WOsNnCmiGY8d-6Q2J8C6XCtl69gy2CyADdJb89H3SveglHDaKK0wUAPC7GG8AQovAGDg&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=">
-        <img src="./gmail.jpg">
-
-      </a>
-
-    </span>
-  </div>
-
-
-  <footer>
-    <p>WR Locações e Serviços</p>
-
-  </footer>
-
- 
   <script src="./script.js"></script>
+  <script type="module" src="./upload.js"></script>
 
 </body>
 

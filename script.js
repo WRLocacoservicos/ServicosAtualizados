@@ -6,15 +6,18 @@ let obras = document.querySelector('.obras');
 let ObAndamento = document.querySelector('.ObAndamento');
 let btnRDOs = document.querySelector('#btnRDO');
 
-document.querySelector('form').addEventListener('submit', function(event) {
+
+
+
+document.querySelector('form').addEventListener('submit', function uploadImage(event) {
   event.preventDefault();
   var data = new FormData(event.target);
   fetch('https://sheetdb.io/api/v1/xe8dsai9xxogg', {
       method: 'POST',
       body: data
   }).then(function(response) {
+    uploadImage()
     alerta()
-  
    
   });
 })
