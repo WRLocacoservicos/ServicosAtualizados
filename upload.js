@@ -40,14 +40,14 @@ uploadImage.addEventListener('click', () => {
     let folderName = '';
     if (Ceara.checked) {
         folderName = Ceara.name;
-      } else if (Para.checked) {
+    } else if (Para.checked) {
         folderName = Para.name;
-     } else if (Balsa.checked) {
+    } else if (Balsa.checked) {
         folderName = Balsa.name;
     }
 
- 
-   
+
+
     const files = input.files;
     for (let i = 0; i < files.length; i++) {
         let file = files[i];
@@ -56,23 +56,23 @@ uploadImage.addEventListener('click', () => {
 
         uploadTask.on("state_changed",
             (snapshot) => {
-                
+
                 let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
 
                 progressBar.value = progress;
                 percent.innerHTML = Math.round((progressBar.value / progressBar.max) * 100) + '%';
-                
+
             },
             (error) => {
                 console.log(error);
             },
             () => {
                 input.value = ''
-             
+
                 return
 
             }
         );
-        
+
     }
 })

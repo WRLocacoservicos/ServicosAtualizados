@@ -31,7 +31,8 @@
         </div>
         <ul class="ul">
           <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
-          <a class="smooth-scroll" id="openRDO" onclick="closeNav() " style="color: black;"><strong>Relatório diario de obras</strong></a>
+          <a class="smooth-scroll" id="openRDO" onclick="closeNav() " style="color: black;"><strong>Relatório diario de
+              obras</strong></a>
           <a class="smooth-scroll" id="openTodo" onclick="closeNav()">LISTA DE TAREFAS</a>
           <a href="https://to-do-delta-umber.vercel.app/" class="smooth-scroll" onclick="closeNav()">Tarefas
             programadas</a>
@@ -131,46 +132,46 @@
               <input type="number" id="Munk" name="data[Munk]">
             </div>
           </div>
-            <div class="containerFile">
-              <h2>Enviar imagens da Obra</h2>
-              <ul>
-                <li>
-                  <input type="checkbox" name="Ceará" id="Ceara">
-                  <label for="Ceara">Ceará</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="Para" id="Para">
-                  <label for="Para">Para</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="Balsa Nova" id="Balsa">
-                  <label for="Balsa">Balsa Nova</label>
-                </li>
+          <div class="containerFile">
+            <h2>Enviar imagens da Obra</h2>
+            <ul>
+              <li>
+                <input type="checkbox" name="Ceará" id="Ceara">
+                <label for="Ceara">Ceará</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Para" id="Para">
+                <label for="Para">Para</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Balsa Nova" id="Balsa">
+                <label for="Balsa">Balsa Nova</label>
+              </li>
 
-              </ul>
-              <div class="files">
-                <input type="file" name="arquivo" multiple>
-                <div id="percent"></div>
+            </ul>
+            <div class="files">
+              <input type="file" name="arquivo" multiple>
+              <div id="percent"></div>
               <progress value="0" max="100" class="regress"></progress>
 
               <button class="enviar" type="button" id="uploadImage">Enviar Imagem</button>
-              </div>
-              
-              <div class="assinaturas">
-                <p>Responsável</p>
-                <br>
-                <input type="text" id="Responsável" required name="data[Nome Do Responsável]">
-  
-              </div>
-              <div class="botao">
-                <button type="submit" id="btnRDO">Enviar</button>
-  
-                <button type="reset">Limpar</button>
-  
-              </div>
             </div>
-    
-          
+
+            <div class="assinaturas">
+              <p>Responsável</p>
+              <br>
+              <input type="text" id="Responsável" required name="data[Nome Do Responsável]">
+
+            </div>
+            <div class="botao">
+              <button type="submit" id="btnRDO">Enviar</button>
+
+              <button type="reset">Limpar</button>
+
+            </div>
+          </div>
+
+
 
       </form>
 
