@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./style/mobile.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <link rel="icon" href="./img/wr.png">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./img/fundo.png">
+   
 
 
 
@@ -20,16 +20,29 @@
 <body class="login">
 
     <form class="entrar">
-        <div class="containerForm">
-            <img src="./img/fundo.png" alt="logo">
+        <img src="./img/fundo.png" alt="logo">
+        <div class="containerForm_login">
+           
             <input type="text" id="user" placeholder="Usuário">
             <br>
             <input type="password" id="password" placeholder="Senha">
             <br>
             <input type="submit" id="btn" class="btnForm" onclick="logar(); return false" value="verificar">
         </div>
+    
     </form>
+    
+    <dialog class="senha">
+        <div class="alert">
+            <p><i class='bx bx-x'></i></p>
+            <p>Senha incorreta!</p>
+            <br>
+            <button  onclick="Close()" id="fechar">OK</button>
+        </div>
+    </dialog>
 
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./login.js"></script>
 
 

@@ -76,3 +76,5 @@ uploadImage.addEventListener('click', () => {
 
     }
 })
+
+

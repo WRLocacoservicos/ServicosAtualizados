@@ -8,168 +8,180 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="./img/wr.png">
+  <link rel="icon" href="./img/fundo.png">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" media="screen and (max-width:800px)" href="./style/mobile.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="./img/fundo.png"> -->
 
-  <title>SERVIÇOS</title>
+  <title>Serviços</title>
 </head>
 
 <body>
-
-  <header id="heade">
-    <!--container-->
-    <div class="container">
-
-      <nav>
-        <div class="imagenNav">
-          <img src="./img/fundo.png">
-        </div>
-        <ul class="ul">
-          <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
-          <a class="smooth-scroll" id="openRDO" onclick="closeNav() " style="color: black;"><strong>Relatório diario de
-              obras</strong></a>
-          <a class="smooth-scroll" id="openTodo" onclick="closeNav()">LISTA DE TAREFAS</a>
-          <a href="https://to-do-delta-umber.vercel.app/" class="smooth-scroll" onclick="closeNav()">Tarefas
-            programadas</a>
-          <a class="smooth-scroll" id="openObras" onclick="closeNav() ">CADASTRO DE OBRAS</a>
-          <a class="smooth-scroll" href="https://centraldofuncionario.com.br/69410" onclick="closeNav() ">ponto web</a>
-          <a class="smooth-scroll" href="https://drive.google.com/file/d/1CkhwjMcOQ1Zna9hSzibofOxCI-I4-B8a/view"
-            onclick="closeNav() ">suporte</a>
-          <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=554198915343"
-            onclick="closeNav() ">engenharia</a>
-          <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=5541413810186"
-            onclick="closeNav() ">administrativo</a>
-          <a class="smooth-scroll" href="./index.html" onclick="closeNav() ">sair</a>
-        </ul>
-        <span class="open-btn" onclick="openNav()">&#9776;</span>
-        <span class="close-btn" onclick="closeNav()">&times;</span>
-      </nav>
-
-      <section class="banner">
-
-        <div class="to-do">
-
-          <div class="header">
-
-
-            <p>To-Do List</p>
-
-            <button><i class='bx bxs-trash-alt'></i></button>
-
-          </div>
-
-          <br />
-          <div class="divInsert">
-            <input id="todolist" class="textInsert" type="text" />
-            <button><i class='bx bx-plus'></i></button>
-          </div>
-          <div class="novatarefa"></div>
-        </div>
-      </section>
-
+  <header>
+    <div class="header-logo">
+      <img src="./img/fundo.png" alt="">
     </div>
   </header>
+
+
+
+  <!--container-->
+  <div class="container">
+
+    <nav>
+      <div class="imagenNav">
+        <img src="./img/fundo.png">
+      </div>
+      <ul class="ul">
+        <!-- <button id="pdf" onclick="PDF()">print</button> -->
+        <a class="smooth-scroll" id="openAndamento" onclick="closeNav()">SERVIÇOS EM ANDAMENTO</a>
+        <a class="smooth-scroll" id="openRDO" onclick="closeNav() " style="color: black;"><strong>Relatório diario de
+            obras</strong></a>
+        <a class="smooth-scroll" id="openTodo" onclick="closeNav()">LISTA DE TAREFAS</a>
+        <a href="https://to-do-delta-umber.vercel.app/" class="smooth-scroll" onclick="closeNav()">Tarefas
+          programadas</a>
+        <!-- <a class="smooth-scroll" id="openObras" onclick="closeNav() ">CADASTRO DE OBRAS</a> -->
+        <a class="smooth-scroll" href="https://centraldofuncionario.com.br/69410" onclick="closeNav() ">ponto web</a>
+        <a class="smooth-scroll" href="https://drive.google.com/file/d/1CkhwjMcOQ1Zna9hSzibofOxCI-I4-B8a/view"
+          onclick="closeNav() ">suporte</a>
+        <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=554198915343"
+          onclick="closeNav() ">engenharia</a>
+        <a class="smooth-scroll" href="https://api.whatsapp.com/send?phone=5541413810186"
+          onclick="closeNav() ">administrativo</a>
+        <a class="smooth-scroll" href="./index.html" onclick="closeNav() ">sair</a>
+
+      </ul>
+      <span class="open-btn" onclick="openNav()">&#9776;</span>
+      <span class="close-btn" onclick="closeNav()">&times;</span>
+    </nav>
+
+    <section class="banner">
+
+      <div class="to-do">
+
+        <div class="header">
+
+
+          <p>To-Do List</p>
+
+          <button><i class='bx bxs-trash-alt'></i></button>
+
+        </div>
+
+        <br />
+        <div class="divInsert">
+          <input id="todolist" class="textInsert" type="text" />
+          <button><i class='bx bx-plus'></i></button>
+        </div>
+        <div class="novatarefa"></div>
+      </div>
+    </section>
+
+  </div>
+
   <main>
 
 
     <div class="ObAndamento">
       <h1>Relatórios diário de Obras</h1>
 
-      <iframe
+      <iframe class="googlesheet"
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRv9sSsNopIrpROrhgwHa1LlvNT6EXkxtTI6oeBjS8BRJSUsgB3qfJQlv2VmXS-tLOkoxhZG8847FVl/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
     </div>
+
+    <dialog>
+      <button onclick="voltarRDO()" id="voltaRDO"><i class='bx bx-x'></i></button>
+
+      <div id="res">aqui</div>
+    </dialog>
     <div class="rdo">
+      <form id="print">
 
-      <form>
+        <div class="cabecalho">
+          <h2>Relatórios diário de Obras</h2>
+          <label for="dia">Data</label>
+          <input type="date" id="dia" required name="data[Dia]">
+          <label>Descrição do Trabalho</label>
+          <textarea name=" data[Descrição do Trabalho]" required id="descricao" cols="10" rows="10"></textarea>
+          <label>Local da Obra</label>
+          <input type="text" id="Local" required placeholder="Local da Obra" name="data[Local da Obra]">
+          <label for="inicio">Inicio do trabalho</label>
+          <input type="time" id="inicio" placeholder="Inicio do trabalho" name="data[Inicio do trabalho]">
+          <label for="fim">Fim do trabalho</label>
+          <input type="time" id="fim" placeholder="Fim do trabalho" name="data[Fim do trabalho]">
+          <label for="Paralizacao">Paralizacao</label>
+          <textarea type="text" id="Paralizacao" name="data[Paralisação início e fim]" cols="10" rows="10"></textarea>
+          <label for="Insumos">Insumos</label>
+          <textarea id="Insumos" required name="data[Quantidade de Insumos]" cols="10" rows="10"></textarea>
+        </div>
+        <h2>Quantidade de funcionários</h2>
+        <div class="funcionarios">
 
-        <div class="containerFormRDO">
-
-          <div class="cabecalho">
-            <h2>Relatórios diário de Obras</h2>
-            <label for="dia">Data</label>
-            <input type="date" id="dia" required name="data[Dia]">
-            <label>Descrição do Trabalho</label>
-            <textarea name=" data[Descrição do Trabalho]" required id="" cols="10" rows="10"></textarea>
-            <label>Local da Obra</label>
-            <input type="text" id="Local" required placeholder="Local da Obra" name="data[Local da Obra]">
-            <label for="inicio">Inicio do trabalho</label>
-            <input type="time" id="inicio" placeholder="Inicio do trabalho" name="data[Inicio do trabalho]">
-            <label for="fim">Fim do trabalho</label>
-            <input type="time" id="fim" placeholder="Fim do trabalho" name="data[Fim do trabalho]">
-            <label for="Paralizacao">Paralizacao</label>
-            <textarea type="text" id="Paralizacao" name="data[Paralisação início e fim]" cols="10"
-              rows="10">Paralisação início e fim:</textarea>
-            <label for="Insumos">Insumos</label>
-            <textarea id="Insumos" required name="data[Quantidade de Insumos]" cols="10" rows="10"></textarea>
+          <div class="um">
+            <label for="Encarregado">Encarregado</label>
+            <input type="number" id="Encarregado" name="data[Encarregado]">
+            <label for="Líder">Líder</label>
+            <input type="number" id="Líder" name="data[Líder]">
+            <label for="Pintor">Pintor</label>
+            <input type="number" id="Pintor" name="data[Pintor]">
+            <label for="Pintor">Ajudante</label>
+            <input type="number" id="ajudante" name="data[Ajudante]">
           </div>
-          <h2>Quantidade de funcionários</h2>
-          <div class="funcionarios">
+          <div class="dois">
 
-            <div class="um">
-              <label for="Encarregado">Encarregado</label>
-              <input type="number" id="Encarregado" name="data[Encarregado]">
-              <label for="Líder">Líder</label>
-              <input type="number" id="Líder" name="data[Líder]">
-              <label for="Pintor">Pintor</label>
-              <input type="number" id="Pintor" name="data[Pintor]">
-              <label for="Pintor">Ajudante</label>
-              <input type="number" id="ajudante" name="data[Ajudante]">
-            </div>
-            <div class="dois">
-
-              <label for="Soldador">Soldador</label>
-              <input type="number" id="Soldador" name="data[Soldador]">
-              <label for="Mecânico/Montador">Mecânico/Montador</label>
-              <input type="number" id="Mecânico/Montador" name="data[Mecânico/Montador]">
-              <label for="Caldeireiro">Caldeireiro</label>
-              <input type="number" id="Caldeireiro" name="data[Caldeireiro]">
-              <label for="Munk">Munk</label>
-              <input type="number" id="Munk" name="data[Munk]">
-            </div>
+            <label for="Soldador">Soldador</label>
+            <input type="number" id="Soldador" name="data[Soldador]">
+            <label for="Mecânico_Montador">Mecânico/Montador</label>
+            <input type="number" id="Mecânico_Montador" name="data[Mecânico/Montador]">
+            <label for="Caldeireiro">Caldeireiro</label>
+            <input type="number" id="Caldeireiro" name="data[Caldeireiro]">
+            <label for="Munk">Munk</label>
+            <input type="number" id="Munk" name="data[Munk]">
           </div>
-          <div class="containerFile">
-            <h2>Enviar imagens da Obra</h2>
-            <ul>
-              <li>
-                <input type="checkbox" name="Ceará" id="Ceara">
-                <label for="Ceara">Ceará</label>
-              </li>
-              <li>
-                <input type="checkbox" name="Para" id="Para">
-                <label for="Para">Para</label>
-              </li>
-              <li>
-                <input type="checkbox" name="Balsa Nova" id="Balsa">
-                <label for="Balsa">Balsa Nova</label>
-              </li>
+        </div>
+        <div class="containerFile">
+          <h2>Enviar imagens da Obra</h2>
+          <ul>
+            <li>
+              <input type="checkbox" name="Ceará" id="Ceara">
+              <label for="Ceara">Ceará</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Para" id="Para">
+              <label for="Para">Para</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Balsa Nova" id="Balsa">
+              <label for="Balsa">Balsa Nova</label>
+            </li>
 
-            </ul>
-            <div class="files">
-              <input type="file" name="arquivo" multiple>
-              <div id="percent"></div>
-              <progress value="0" max="100" class="regress"></progress>
+          </ul>
+          <div class="files">
+            <input type="file" name="arquivo" multiple>
+            <div id="percent"></div>
+            <progress value="0" max="100" class="regress"></progress>
 
-              <button class="enviar" type="button" id="uploadImage">Enviar Imagem</button>
-            </div>
-
-            <div class="assinaturas">
-              <p>Responsável</p>
-              <br>
-              <input type="text" id="Responsável" required name="data[Nome Do Responsável]">
-
-            </div>
-            <div class="botao">
-              <button type="submit" id="btnRDO">Enviar</button>
-
-              <button type="reset">Limpar</button>
-
-            </div>
+            <button class="enviar" type="button" id="uploadImage">Enviar Imagem</button>
           </div>
+
+          <div class="assinaturas">
+            <p>Responsável</p>
+            <br>
+            <input type="text" id="Responsável" required name="data[Nome Do Responsável]">
+
+          </div>
+          <div class="botao">
+            <button type="button">Limpar</button>
+            <button type="submit" id="btnRDO">Enviar</button>
+            <button type="button" onclick=" pdf()">PDF</button>
+
+
+          </div>
+
 
 
 
@@ -177,17 +189,29 @@
 
 
 
-      <!-- <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUMjFEVDJKVTFaT1E0UFY4TEE5NkxJNkNUMC4u&embed=true"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
     </div>
-    <div class="obras">
-      <iframe
-        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUQllFWVoxMk5YWE1TNEtRN0lQQldKR0k0Qy4u&embed=true">
-      </iframe>
-    </div>
+    <!-- <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kPxeQZUMjFEVDJKVTFaT1E0UFY4TEE5NkxJNkNUMC4u&embed=true"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
 
+    <dialog class="mensagem">
+      <div class="alert">
+        <p><i class='bx bxs-check-circle'></i></p>
+        <p>Enviado com Sucesso!</p>
+        <br>
+        <button onclick="CloseMensagem()" id="fechar">OK</button>
+      </div>
+    </dialog>
   </main>
 
+  <footer>
 
+    <a href="https://api.whatsapp.com/send?phone=5541997457028"><i class='bx bxl-whatsapp'></i></a>
+
+
+
+    <p class="copy">Todos os direitos reservados &#x00A9; 2023</p>
+    <br>
+    <p> Ismaile Rodrigues</p>
+  </footer>
   <script src="./script.js"></script>
   <script type="module" src="./upload.js"></script>
 
