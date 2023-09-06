@@ -20,8 +20,9 @@ const storage = getStorage(app);
 const input = document.querySelector('input[type=file]');
 const progressBar = document.querySelector('progress');
 const Ceara = document.querySelector('#Ceara');
-const Para = document.querySelector('#Para');
+const Ambiental = document.querySelector('#Ambiental');
 const Balsa = document.querySelector('#Balsa');
+const Barracão = document.querySelector('#Barracão');
 const uploadImage = document.querySelector('#uploadImage');
 const checkbox = document.querySelector('input[type=checkbox]');
 var percent = document.getElementById('percent');
@@ -40,13 +41,14 @@ uploadImage.addEventListener('click', () => {
     let folderName = '';
     if (Ceara.checked) {
         folderName = Ceara.name;
-    } else if (Para.checked) {
-        folderName = Para.name;
+    } else if (Ambiental.checked) {
+        folderName = Ambiental.name;
     } else if (Balsa.checked) {
         folderName = Balsa.name;
+    }else if (Barracão.checked) {
+        folderName = Barracão.name;
+
     }
-
-
 
     const files = input.files;
     for (let i = 0; i < files.length; i++) {
