@@ -12,6 +12,8 @@
 
 }
 
+
+
 header {
   overflow: hidden;
   border-bottom: #8b979b 1px solid;
@@ -599,6 +601,29 @@ dialog i {
 dialog button {
 
   margin-left: 90%;
+}
+.ObAndamento{
+  height: 80%;
+}
+
+#minhaLista{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 20%;
+}
+
+#minhaLista p{
+  text-decoration:underline;
+  word-wrap: break-word;
+  font-weight: lighter;
+  margin-left: 5px;
+  margin-top: 5px;
+
+}
+#minhaLista h2 {
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 footer p {

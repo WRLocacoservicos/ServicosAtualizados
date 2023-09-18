@@ -126,17 +126,15 @@ let openTodo = document.querySelector("#openTodo")
 let openRDO = document.querySelector("#openRDO")
 let openObras = document.querySelector("#openObras")
 let openAndamento = document.querySelector("#openAndamento")
-let googlesheet = document.querySelector(".googlesheet")
+let googlesheet = document.querySelector("#minhaLista")
 let footer = document.querySelector("footer")
 
 
 openAndamento.addEventListener('click', () => {
-  if (ObAndamento) {
+  
     ObAndamento.style.display = 'block'
     rdo.style.display = 'none'
     Todo.style.display = 'none'
-
-  }
 
 })
 openTodo.addEventListener('click', () => {

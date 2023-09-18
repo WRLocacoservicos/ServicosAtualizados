@@ -89,8 +89,8 @@
     <div class="ObAndamento">
       <h1>Relatórios diário de Obras</h1>
 
-      <iframe class="googlesheet"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRv9sSsNopIrpROrhgwHa1LlvNT6EXkxtTI6oeBjS8BRJSUsgB3qfJQlv2VmXS-tLOkoxhZG8847FVl/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+     <div id="minhaLista"></div>   
+    
     </div>
 
     <dialog>
@@ -106,9 +106,9 @@
           <label for="dia">Data</label>
           <input type="date" id="dia" required name="data[Dia]">
           <label>Descrição do Trabalho</label>
-          <textarea name=" data[Descrição do Trabalho]" required id="descricao" cols="10" rows="10"></textarea>
+          <textarea name=" data[Descrição_do_Trabalho]" required id="descricao" cols="10" rows="10"></textarea>
           <label>Local da Obra</label>
-          <input type="text" id="Local" required placeholder="Local da Obra" name="data[Local da Obra]">
+          <input type="text" id="Local" required placeholder="Local da Obra" name="data[Local_da_Obra]">
           <label for="inicio">Inicio do trabalho</label>
           <input type="time" id="inicio" placeholder="Inicio do trabalho" name="data[Inicio do trabalho]">
           <label for="fim">Fim do trabalho</label>
@@ -217,6 +217,7 @@
     <p> Ismaile Rodrigues</p>
   </footer>
   <script src="./script.js"></script>
+  <script src="./ApiSheetdb.js"></script>
   <script type="module" src="./upload.js"></script>
 
 </body>
