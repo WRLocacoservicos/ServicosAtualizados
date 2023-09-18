@@ -19,7 +19,9 @@ document.querySelector('form').addEventListener('submit', function uploadImage(e
     method: 'POST',
     body: data
   }).then(function (response) {
-    enviado()
+    // enviado()
+    dialogOpen()
+
     mensagem.showModal()
   });
 })
@@ -148,14 +150,7 @@ openTodo.addEventListener('click', () => {
 
 })
 
-var form = document.querySelector('form');
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  var inputs = form.querySelectorAll('input');
-  for (var i = 0; i < inputs.length; i++) {
-    inputs[i].value = '';
-  }
-});
+
 
 
 openRDO.addEventListener('click', () => {
@@ -244,17 +239,32 @@ function pdf() {
 
 
 
-  dialog.showModal()
 
 
 
 }
+retornaMensage()
 function voltarRDO() {
-
+  
+  confirmarSaida()
   dialog.close()
 
 
 }
+
+function dialogOpen() {
+
+  dialog.showModal()
+  pdf()
+}
+
+
+
+function confirmarSaida() {
+  return confirm('Você tem certeza de que deseja sair?');
+}
+
+
 function gerarPDF() {
 
   const conteudo = document.getElementById('imprime').innerHTML;
