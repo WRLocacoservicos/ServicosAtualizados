@@ -613,6 +613,11 @@ dialog button {
   margin-left: 20%;
 }
 
+#filtro{
+  margin: auto;
+  display: flex;
+}
+
 #minhaLista p{
   text-decoration:underline;
   word-wrap: break-word;

@@ -205,7 +205,7 @@ function pdf() {
   const Mecânico_Montador = document.getElementById('Mecânico_Montador').value
   const Caldeireiro = document.getElementById('Caldeireiro').value
   const Munk = document.getElementById('Munk').value
-  const Responsável = document.getElementById('Responsável').value
+  const Responsavel = document.getElementById('Responsavel').value
 
   const valoresHTML = `
 <div id="imprime">
@@ -229,7 +229,7 @@ function pdf() {
 <p> Mecânico_Montador: ${Mecânico_Montador}</p>
 <p>Caldeireiro: ${Caldeireiro}</p>
 <p>Munk: ${Munk}</p>
-<p>Responsável: ${Responsável}</p>
+<p>Responsável: ${Responsavel}</p>
 <button onclick="gerarPDF()" id="gerar">Gerar PDF</butoon>
 </div>
 `;
@@ -243,7 +243,7 @@ function pdf() {
 
 
 }
-retornaMensage()
+
 function voltarRDO() {
   
   confirmarSaida()
