@@ -23,6 +23,8 @@ const Ceara = document.querySelector('#Ceara');
 const Ambiental = document.querySelector('#Ambiental');
 const Balsa = document.querySelector('#Balsa');
 const Barracão = document.querySelector('#Barracão');
+const Belem = document.querySelector('#Belem');
+const Kalimento = document.querySelector('#Kalimento');
 const uploadImage = document.querySelector('#uploadImage');
 const checkbox = document.querySelector('input[type=checkbox]');
 var percent = document.getElementById('percent');
@@ -47,6 +49,12 @@ uploadImage.addEventListener('click', () => {
         folderName = Balsa.name;
     }else if (Barracão.checked) {
         folderName = Barracão.name;
+
+    }else if (Belem.checked) {
+        folderName = Belem.name;
+
+    }else if (Kalimento.checked) {
+        folderName = Kalimento.name;
 
     }
 

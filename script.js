@@ -19,7 +19,7 @@ document.querySelector('form').addEventListener('submit', function uploadImage(e
     method: 'POST',
     body: data
   }).then(function (response) {
-    // enviado()
+    enviado()
     dialogOpen()
 
     mensagem.showModal()
