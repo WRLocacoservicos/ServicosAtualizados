@@ -5,6 +5,13 @@ let rdo = document.querySelector('.rdo');
 let ObAndamento = document.querySelector('.ObAndamento');
 let btnRDOs = document.querySelector('#btnRDO');
 let mensagem = document.querySelector('.mensagem');
+let copy = document.querySelector('#copy');
+
+let dataAtual = new Date()
+
+let ano = dataAtual.getFullYear()
+
+copy.innerHTML = `Todos os direitos reservados  &#x00A9; ${ano}`
 
 
 
@@ -133,10 +140,10 @@ let footer = document.querySelector("footer")
 
 
 openAndamento.addEventListener('click', () => {
-  
-    ObAndamento.style.display = 'block'
-    rdo.style.display = 'none'
-    Todo.style.display = 'none'
+
+  ObAndamento.style.display = 'block'
+  rdo.style.display = 'none'
+  Todo.style.display = 'none'
 
 })
 openTodo.addEventListener('click', () => {
@@ -245,7 +252,7 @@ function pdf() {
 }
 
 function voltarRDO() {
-  
+
   confirmarSaida()
   dialog.close()
 

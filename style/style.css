@@ -12,6 +12,12 @@
 
 }
 
+#pesquisar {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+  border: none;
+}
 
 
 header {
@@ -602,30 +608,32 @@ dialog button {
 
   margin-left: 90%;
 }
-.ObAndamento{
+
+.ObAndamento {
   height: 80%;
 }
 
-#minhaLista{
+#minhaLista {
   display: flex;
   flex-direction: column;
   width: 70%;
   margin-left: 20%;
 }
 
-#filtro{
+#filtro {
   margin: auto;
   display: flex;
 }
 
-#minhaLista p{
-  text-decoration:underline;
+#minhaLista p {
+  text-decoration: underline;
   word-wrap: break-word;
   font-weight: lighter;
   margin-left: 5px;
   margin-top: 5px;
 
 }
+
 #minhaLista h2 {
   text-align: center;
   margin-bottom: 5px;
@@ -636,7 +644,8 @@ footer p {
   margin-top: -30px;
 
 }
-h4{
+
+h4 {
   color: red;
 }
 
