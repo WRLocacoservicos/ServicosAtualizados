@@ -1,19 +1,19 @@
-// Criação do campo de entrada
 
-let pesquisar = document.querySelector('#pesquisar')
 
+const pesquisar = document.querySelector('#pesquisar')
+const divMinhalista = document.getElementById('minhaLista');
 
 fetch('https://sheetdb.io/api/v1/xe8dsai9xxogg')
   .then(response => response.json())
   .then(data => {
-    const divMinhalista = document.getElementById('minhaLista');
-
+ 
     // Evento de escuta para o campo de entrada
-    document.getElementById('pesquisar').addEventListener('input', (e) => {
+    pesquisar.addEventListener('input', (e) => {
       const searchTerm = e.target.value.toLowerCase();
 
       // Limpa a lista antes de adicionar itens filtrados
       divMinhalista.innerHTML = '';
+    
 
       data.filter(item => item.Local_da_Obra.toLowerCase().includes(searchTerm)).forEach(item => {
         const descricao = document.createElement('p');
@@ -31,5 +31,6 @@ fetch('https://sheetdb.io/api/v1/xe8dsai9xxogg')
         divMinhalista.appendChild(Responsavel);
       });
     });
+    
   })
   .catch(error => console.error('Erro:', error));

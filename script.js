@@ -6,7 +6,7 @@ let ObAndamento = document.querySelector('.ObAndamento');
 let btnRDOs = document.querySelector('#btnRDO');
 let mensagem = document.querySelector('.mensagem');
 let copy = document.querySelector('#copy');
-
+//copy
 let dataAtual = new Date()
 
 let ano = dataAtual.getFullYear()
@@ -22,7 +22,7 @@ copy.innerHTML = `Todos os direitos reservados  &#x00A9; ${ano}`
 document.querySelector('form').addEventListener('submit', function uploadImage(event) {
   event.preventDefault();
   var data = new FormData(event.target);
-  fetch('https://sheetdb.io/api/v1/xe8dsai9xxogg', {
+  fetch('https://sheetdb.io/api/v1/lgmibaze0v5ja', {
     method: 'POST',
     body: data
   }).then(function (response) {
