@@ -13,7 +13,7 @@
 }
 
 #pesquisar {
-  display: flex;
+  display: none;
   margin: auto;
   margin-bottom: 10px;
   border: none;
@@ -369,6 +369,15 @@ nav {
   background-color: rgb(76, 13, 170);
   
 
+}
+#pesquisando {
+  display: flex;
+  margin: auto;
+  border: none;
+  background-image: linear-gradient(rgba(0, 217, 255, 0.8), rgba(29, 5, 134, 0.8));
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 nav ul {

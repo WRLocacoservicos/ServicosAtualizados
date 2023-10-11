@@ -2,8 +2,15 @@
 
 const pesquisar = document.querySelector('#pesquisar')
 const divMinhalista = document.getElementById('minhaLista');
+const pesquisando = document.getElementById('pesquisando');
 
-fetch('https://sheetdb.io/api/v1/971t6biy0b6be')
+
+
+
+pesquisando.addEventListener('click', () => {
+  pesquisar.style.display = "flex"
+ pesquisando.style.display = "none"
+fetch('https://sheetdb.io/api/v1/xe8dsai9xxogg')
   .then(response => response.json())
   .then(data => {
  
@@ -34,3 +41,6 @@ fetch('https://sheetdb.io/api/v1/971t6biy0b6be')
     
   })
   .catch(error => console.error('Erro:', error));
+});
+
+// pesquisando()

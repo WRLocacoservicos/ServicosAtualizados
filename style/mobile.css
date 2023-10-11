@@ -459,3 +459,7 @@ footer a i {
   background-color: #2bc405;
 }
 
+#pesquisando {
+  display: flex;
+  margin: auto;
+}
