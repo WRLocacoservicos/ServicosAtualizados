@@ -3,7 +3,7 @@
 const pesquisar = document.querySelector('#pesquisar')
 const divMinhalista = document.getElementById('minhaLista');
 
-fetch('https://sheetdb.io/api/v1/xe8dsai9xxogg')
+fetch('https://sheetdb.io/api/v1/971t6biy0b6be')
   .then(response => response.json())
   .then(data => {
  

@@ -22,11 +22,11 @@ copy.innerHTML = `Todos os direitos reservados  &#x00A9; ${ano}`
 document.querySelector('form').addEventListener('submit', function uploadImage(event) {
   event.preventDefault();
   var data = new FormData(event.target);
-  fetch('https://sheetdb.io/api/v1/lgmibaze0v5ja', {
+  fetch('https://sheetdb.io/api/v1/971t6biy0b6be', {
     method: 'POST',
     body: data
   }).then(function (response) {
-    enviado()
+    // enviado()
     dialogOpen()
 
     mensagem.showModal()
