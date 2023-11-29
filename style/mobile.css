@@ -98,7 +98,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgb(0, 217, 255), rgb(7, 6, 10));
+  background-image: linear-gradient(rgb(5, 5, 5), rgb(77, 71, 71), rgb(5, 5, 5));
   color: #fff;
   position: fixed;
   top: 0;
@@ -125,16 +125,19 @@ nav .ul {
   left: -100%;
   width: 70%;
   transition: all 0.5s ease;
-  background-image: linear-gradient(rgb(0, 217, 255), rgb(7, 6, 10));
+  background-color: #e9e9e9;
+
+  /* background-image: linear-gradient(rgb(0, 217, 255), rgb(7, 6, 10)); */
 }
 
 nav ul a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   font-size: 1rem;
   /* text-align: center; */
   padding: 5px;
   margin: 10px 0;
+  border-bottom: 1px solid #aaa7a7;
 
 }
 
@@ -275,10 +278,11 @@ p {
 }
 
 #openRDO {
-  width: 250px;
-  margin-left: 2%;
   transition: 1s;
-  animation: animaBotao 1s ease-in-out infinite;
+  padding: 10px;
+  display: flex;
+  /* align-items: center; */
+  margin-top: -12px;
 }
 
 
@@ -426,6 +430,7 @@ footer {
   width: 100%;
   height: 100px;
   position: absolute;
+  background-image: linear-gradient(rgb(5, 5, 5), rgb(77, 71, 71), rgb(5, 5, 5));
 }
 
 footer p {
@@ -493,4 +498,13 @@ footer a i {
 #pesquisando {
   display: flex;
   margin: auto;
+
+}
+
+#pesquisar{
+  width: 80%;
+  font-size: 1rem;
+  padding: 20px;
+  text-align: center;
+  border-radius: 14px;
 }
