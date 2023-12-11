@@ -76,10 +76,13 @@ header {
 header img {
   width: 80px;
   margin-left: 5%;
+  border-radius: 50%;
 }
 
 .header-logo {
   overflow-y: none;
+  display: flex;
+  align-items: center;
   height: 100%;
 }
 
@@ -564,6 +567,11 @@ h1 {
 
 main {
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-image: url(../img/fundo.png);
+
 }
 
 
@@ -677,6 +685,7 @@ dialog button {
 
 .ObAndamento {
   height: 80%;
+
   /* position: relative; */
 }
 
