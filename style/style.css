@@ -345,8 +345,10 @@ label {
 
 .entrar img {
   display: flex;
+  border-radius: 50%;
   margin: auto;
-  width: 150px;
+  width: 100px;
+  margin-bottom:5px ;
 }
 
 .entrar .containerForm_login {
